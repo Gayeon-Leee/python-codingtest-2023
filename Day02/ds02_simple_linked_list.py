@@ -12,8 +12,7 @@ dataArray = ['민혁', '기현', '형원', '주헌', '창균']
 def printNodes(start):
     current = start
     if current == None:
-        return
-    
+        return   
     print(current.data, end=' -> ')
     while current.link != None:
         current = current.link
