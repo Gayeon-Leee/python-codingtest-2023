@@ -50,6 +50,10 @@ def deQueue():
         print('Queue is Empty')
         return None
     else:   #deQueue를 한 뒤 뒤의 데이터를 당겨와 빈자리를 채우는 것 => 없으면 앞의 데이터 빼고나서 None 으로 남음
+        front += 1
+        data = queue[front]
+        queue[front] = None
+        
         for i in range(front+1, SIZE):
             queue[i-1] = queue[i]
             queue[i] = None
