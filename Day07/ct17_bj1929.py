@@ -9,6 +9,8 @@ for i in range(2, N+1):
 for i in range(2, int(math.sqrt(N)) + 1):   # n의 제곱근 까지만 수행
     if A[i] == 0:
         continue
+    # i == 2 -> 4 + 2 + 2 + 2
+    # i == 3 -> 6 + 3 + 3 + 3
     for j in range(i+i, N+1, i):    # 배수로 지우기
         A[j] = 0    # 소수가 아닌거 지움
     
